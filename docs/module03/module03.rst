@@ -59,6 +59,7 @@ Google Chromeを使った動作確認
 
 
 .. code-block:: cmdin
+
    ＜不審なドメインに対するJSスニペット サンプル＞
    <script>(function() { var s = document.createElement('script'); var domains = ["ganalitis.com", "ganalitics.com", "gstatcs.com", "webfaset.com", "fountm.online", "pixupjqes.tech", "jqwereid.online"]; for (var i = 0; i < domains.length; ++i) { s.src = 'https://' + domains[i]; } })();</script>
 
