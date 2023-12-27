@@ -21,4 +21,5 @@ F5のオフィシャルなドキュメントはこちらにございます。
    :caption: 目次:
    :glob:
 
-   content*/content*
+   module*/module*
+
