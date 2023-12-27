@@ -5,7 +5,7 @@
 
 
 1. 検出スクリプト一覧
-   Home > Client-Side Defense > Monitoring > Script Listから保護対象にて検出したスクリプトの一覧を表示可能。各スクリプトをクリックすることで詳細確認が可能です。
+   [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から保護対象にて検出したスクリプトの一覧を表示可能。各スクリプトをクリックすることで詳細確認が可能です。
 
 
 .. csv-table::
@@ -24,7 +24,7 @@
 
 
 2. 意図する通信、意図しない通信のハンドリング
-   `前項[4. XC Consoleでの確認]の4章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
+   `前項[4. XC Consoleでの確認]の4章,5章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
 
 
 3. Form Fieldの読み取りを抑止
