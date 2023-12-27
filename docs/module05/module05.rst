@@ -44,34 +44,34 @@
 
       該当Fieldの [ Actions ] から [ Mark as Sensitive ] を選択し、適用することで、当該Fieldを機微データとして取り扱うことが可能です。
 
-   .. figure:: images/Picture3-2.png
-      :scale: 50%
-      :align: center
+      .. figure:: images/Picture3-2.png
+         :scale: 50%
+         :align: center
 
 
    (3). Form Fieldを読み取るスクリプトに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [ Block Read ] へ追加することが可能です。
 
       [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から [ Form Fields Read ] に数値が記録されているスクリプトを確認し、 [ Form Fields Read ] の数字を選択します。
 
-   .. figure:: images/Picture3-3.png
-      :scale: 50%
-      :align: center
+      .. figure:: images/Picture3-3.png
+         :scale: 50%
+         :align: center
 
 
    (4). 該当Scriptが読み取っているForm Filedの一覧が表示され、それぞれのRisk Levelを確認可能です。
 
-   前述の [Mark as Sensitive]にて該当Fieldを機微データとして登録しておくと、このFieldを読み取ろうとするScriptは ”High Risk” として記録されます。
+      前述の [Mark as Sensitive]にて該当Fieldを機微データとして登録しておくと、このFieldを読み取ろうとするScriptは ”High Risk” として記録されます。
 
-   これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
+      これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
 
-   .. figure:: images/Picture3-4.png
-      :scale: 50%
-      :align: center
+      .. figure:: images/Picture3-4.png
+         :scale: 50%
+         :align: center
 
 
 4. Alertの通知設定
 
-   CSDで発生したアラート通知の設定として、 [ Alert Receivers ] ではどこに対しAlert Logを飛ばすかを設定し、 [ Alert Policies ] では何のAlert Logを飛ばすか（ここではCSD Alert Log）を設定、最後にそれらの設定内容を [ Active Alert Policies ] として有効化することで、CSDアラート通知を設定可能です。
+   CSDで発生したアラート通知の設定として、 [ Alert Receivers ] ではどこに対しAlert Logを飛ばすかを設定し、 [ Alert Policies ] では何のAlert Logを飛ばすか（ここではCSD Alert Log）を設定し、最後にそれらの設定内容を [ Active Alert Policies ] として有効化することで、CSDアラート通知を設定可能です。
 
    (1). Alert Receiversの設定
       [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Receivers ] にて、 [ Add Alert Receiver ] を選択します。
@@ -94,7 +94,7 @@
       - SMS
       - Webhook
 
-      設定入力後、[ Save and Exit ] を押下。 [ Alert Receiver ] の設定が追加される。
+      設定入力後、[ Save and Exit ] をクリックします。 [ Alert Receiver ] の設定が追加されます。
 
       .. figure:: images/Picture4-3.png
          :scale: 50%
@@ -102,6 +102,7 @@
 
 
    (2). Alert Policiesの設定
+
       [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Policies ] にて、[ Add Alert Policy ] を選択。
 
       .. figure:: images/Picture4-4.png
