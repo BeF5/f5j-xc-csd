@@ -5,7 +5,7 @@
 
 
 1. 検出スクリプト一覧
-   [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から保護対象にて検出したスクリプトの一覧を表示可能。各スクリプトをクリックすることで詳細確認が可能です。
+   [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から保護対象にて検出したスクリプトの一覧を表示可能です。各スクリプトをクリックすることで詳細確認が可能です。
 
 
 .. csv-table::
@@ -20,7 +20,7 @@
    :align: center
 
 
-※ 検出したスクリプトがどのドメインへ通信を行っているか、どのForm Fieldの値を読み取ろうとしているか、振る舞いが確認可能です。
+※ 検出したスクリプトがどのドメインへ通信を行っているか、どのForm Fieldの値を読み取ろうとしているかの振る舞いが確認可能です。
 
 
 2. 意図する通信、意図しない通信のハンドリング
@@ -29,7 +29,7 @@
 
 3. Form Fieldの読み取りを抑止
 
-   (1). Home > Client-Side Defense > Monitoring > Form Fields から特定のスクリプトによって読み取られる全フォームフィールドを確認することが可能です。
+   (1). [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Form Fields ] から特定のスクリプトによって読み取られる全フォームフィールドを確認することが可能です。
 
 .. figure:: images/Picture3-1.png
    :scale: 50%
@@ -38,7 +38,7 @@
 
    (2). 特定のForm Fieldに対して、そのFieldを読み取ろうとするScriptがあった際に、Risk Scoreを ”High Risk” としてマークし、機微データへのアクセスリスクを管理することが可能です。
 
-      該当FieldのActionsから [Mark as Sensitive]を選択し、適用することで、当該Fieldを機微データとして取り扱うことが可能です。
+      該当Fieldの [ Actions ] から [ Mark as Sensitive ] を選択し、適用することで、当該Fieldを機微データとして取り扱うことが可能です。
 
 .. figure:: images/Picture3-2.png
    :scale: 50%
@@ -47,7 +47,7 @@
 
    (3). Form Fieldを読み取るScriptに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [Block Read] へ追加することが可能です。
 
-      Home > Client-Side Defense > Monitoring > Script ListからForm Fields Readに数値が記録されているScriptを確認し、Form Fields Readの数字を選択します。
+      [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から [ Form Fields Read ] に数値が記録されているScriptを確認し、Form Fields Readの数字を選択します。
 
 
 .. figure:: images/Picture3-3.png
@@ -66,10 +66,10 @@
 
 4. Alertの通知設定
 
-   CSDで発生したアラート通知の設定として、[Alert Receivers]ではどこに対しAlert Logを飛ばすかを設定し、[Alert Policies]では何のAlert Logを飛ばすか（ここではCSD Alert Log）を設定、最後にそれらの設定内容を [Active Alert Policies] として有効化することで、CSDアラート通知を設定可能です。
+   CSDで発生したアラート通知の設定として、 [ Alert Receivers ] ではどこに対しAlert Logを飛ばすかを設定し、 [ Alert Policies ] では何のAlert Logを飛ばすか（ここではCSD Alert Log）を設定、最後にそれらの設定内容を [ Active Alert Policies ] として有効化することで、CSDアラート通知を設定可能です。
 
    (1). Alert Receiversの設定
-      Home > Audit Logs & Alerts > Alerts Management > Alert Receivers にて、[Add Alert Receiver] を選択します。
+      [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Receivers ] にて、 [ Add Alert Receiver ] を選択します。
 
       .. figure:: images/Picture4-1.png
          :scale: 50%
@@ -81,7 +81,7 @@
          :align: center
 
 
-      Receiver は下記から選択することが可能。(2023/12時点)
+      Receiverは下記から選択することが可能です。(2023/12時点)
       - Slack
       - PagerDuty
       - OpsGenie
@@ -89,7 +89,7 @@
       - SMS
       - Webhook
 
-      設定入力後、[Save and Exit] を押下。Alert Receiverの設定が追加される。
+      設定入力後、[ Save and Exit ] を押下。 [ Alert Receiver ] の設定が追加される。
 
       .. figure:: images/Picture4-3.png
          :scale: 50%
@@ -97,33 +97,33 @@
 
 
    (2). Alert Policiesの設定
-      Home > Audit Logs & Alerts > Alerts Management > Alert Policiesにて、[Add Alert Policy] を選択。
+      [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Policies ] にて、[ Add Alert Policy ] を選択。
 
       .. figure:: images/Picture4-4.png
          :scale: 50%
          :align: center
 
-      Alert Policy設定では、先ほど設定したAlert Receiverの設定を紐づけ、Policy Rulesから[Security-CSD]を選択。
-
+      Alert Policy設定では、先ほど設定したAlert Receiverの設定を紐づけ、Policy Rulesから [ Security-CSD ] を選択。
+ 
       .. figure:: images/Picture4-5.png
          :scale: 50%
          :align: center
 
-      以下の通り、Security AlertsとGroupsを選択します。
+      以下の通り、[ Security Alerts ] と [ Groups ] を選択します。
 
       .. figure:: images/Picture4-6.png
          :scale: 50%
          :align: center
 
 
-      Show Advanced Fieldsを押下することで、通知間隔を調整可能です。
+      [ Show Advanced Fields ] を押下することで、通知間隔を調整可能です。
 
       .. figure:: images/Picture4-7.png
          :scale: 50%
          :align: center
 
 
-      設定入力後、[Save and Exit] を押下。Alert Policyの設定が追加される。
+      設定入力後、[ Save and Exit ] をクリックする。 [ Alert Policy ] の設定が追加される。
 
       .. figure:: images/Picture4-8.png
          :scale: 50%
@@ -131,21 +131,21 @@
 
 
    (3). Active Alertの設定
-      Home > Audit Logs & Alerts > Alerts Management > Active Alert Policiesにて、[Select Active Alert Policies] を選択。
+      [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Active Alert Policies ] にて、[ Select Active Alert Policies ] をクリックします。
 
       .. figure:: images/Picture4-9.png
          :scale: 50%
          :align: center
 
 
-      [Add Item] を押下 。
+      [Add Item] をクリックします。
 
       .. figure:: images/Picture4-10.png
          :scale: 50%
          :align: center
 
 
-      先ほど作成したAlert Policyを選択し、[Save and Exit] を押下
+      先ほど作成したAlert Policyを選択し、[ Save and Exit ] をクリックします。
 
       .. figure:: images/Picture4-11.png
          :scale: 50%
@@ -159,7 +159,7 @@
          :align: center
 
 
-      以上の設定により、CSDアラートが発生した際に、指定したReceiverに対してアラート通知を飛ばすことが可能。
+      以上の設定により、CSDアラートが発生した際に、指定したReceiverに対してアラート通知を飛ばすことが可能です。
 
 
 これで、XC CSDのセットアップガイドは終了となります。
