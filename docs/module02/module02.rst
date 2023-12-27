@@ -54,7 +54,8 @@ XC Consoleでの設定
       :scale: 50%
       :align: center
 
-   - CSD JSの挿入方法は以下２パターンあります。
+
+- CSD JSの挿入方法は以下２パターンあります。
 
    (1). CSD保護が必要な対象HTTP LBの設定にて、CSD機能を有効化し、CSD JSをLBで挿入するように設定します。（サーバ側での設定変更不要）
 
