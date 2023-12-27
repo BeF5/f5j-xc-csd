@@ -35,27 +35,27 @@
 
    (1). [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Form Fields ] から特定のスクリプトによって読み取られる全フォームフィールドを確認することが可能です。
 
-.. figure:: images/Picture3-1.png
-   :scale: 50%
-   :align: center
+   .. figure:: images/Picture3-1.png
+      :scale: 50%
+      :align: center
 
 
    (2). 特定のForm Fieldに対して、そのFieldを読み取ろうとするScriptがあった際に、Risk Scoreを ”High Risk” としてマークし、機微データへのアクセスリスクを管理することが可能です。
 
       該当Fieldの [ Actions ] から [ Mark as Sensitive ] を選択し、適用することで、当該Fieldを機微データとして取り扱うことが可能です。
 
-.. figure:: images/Picture3-2.png
-   :scale: 50%
-   :align: center
+   .. figure:: images/Picture3-2.png
+      :scale: 50%
+      :align: center
 
 
    (3). Form Fieldを読み取るスクリプトに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [ Block Read ] へ追加することが可能です。
 
       [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から [ Form Fields Read ] に数値が記録されているスクリプトを確認し、 [ Form Fields Read ] の数字を選択します。
 
-.. figure:: images/Picture3-3.png
-   :scale: 50%
-   :align: center
+   .. figure:: images/Picture3-3.png
+      :scale: 50%
+      :align: center
 
 
    (4). 該当Scriptが読み取っているForm Filedの一覧が表示され、それぞれのRisk Levelを確認可能です。
@@ -64,9 +64,9 @@
 
    これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
 
-.. figure:: images/Picture3-4.png
-   :scale: 50%
-   :align: center
+   .. figure:: images/Picture3-4.png
+      :scale: 50%
+      :align: center
 
 
 4. Alertの通知設定
