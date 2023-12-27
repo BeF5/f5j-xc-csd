@@ -28,21 +28,56 @@
    :align: center
 
 
-2. 意図しない通信を抑止
-   Home > Client-Side Defense > Dashboard から DomainをクリックするとRisk Scoreなどが確認可能です。
-   AI/MLによるRisk Score判定がHigh Riskに分類されると、StatusがAction Needed表示となるため、意図するドメインへの通信の場合は [Add To Allow List] へ、意図しないドメインへの通信の場合は [Add To Mitigate List] へ追加します。
+2. 意図する通信、意図しない通信のハンドリング
+    `前項[4. XC Consoleでの確認]の4章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
 
+
+3. Form Fieldの読み取りを抑止
+
+   (1). Home > Client-Side Defense > Monitoring > Form Fields から特定のスクリプトによって読み取られる全フォームフィールドを確認することが可能です。
 
 .. figure:: images/Picture3.jpg
    :scale: 50%
    :align: center
 
 
+   (2). 特定のForm Fieldに対して、そのFieldを読み取ろうとするScriptがあった際に、Risk Scoreを ”High Risk” としてマークし、機微データへのアクセスリスクを管理することが可能です。該当FieldのActionsから [Mark as Sensitive]を選択し、適用することで、当該Fieldを機微データとして取り扱うことが可能です。
+
 .. figure:: images/Picture4.jpg
    :scale: 50%
    :align: center
 
 
+   (3). Form Fieldを読み取るScriptに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [Block Read] へ追加することが可能です。
+
+      Home > Client-Side Defense > Monitoring > Script ListからForm Fields Readに数値が記録されているScriptを確認し、Form Fields Readの数字を選択します。
+
+
 .. figure:: images/Picture5.jpg
    :scale: 50%
    :align: center
+
+
+   (4). 該当Scriptが読み取っているForm Filedの一覧が表示され、それぞれのRisk Levelを確認可能です。前述の [Mark as Sensitive]にて該当Fieldを機微データとして登録しておくと、このFieldを読み取ろうとするScriptは ”High Risk” として記録されます。
+これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
+
+
+.. figure:: images/Picture6.jpg
+   :scale: 50%
+   :align: center
+
+
+4. Alertの通知設定
+
+   CSDで発生したアラート通知の設定として、[Alert Receivers]ではどこに対しAlert Logを飛ばすかを設定し、[Alert Policies]では何のAlert Logを飛ばすか（ここではCSD Alert Log）を設定、最後にそれらの設定内容を [Active Alert Policies] として有効化することで、CSDアラート通知を設定可能です。
+
+   (1). Alert Receiversの設定
+      Home > Audit Logs & Alerts > Alerts Management > Alert Receivers にて、[Add Alert Receiver] を選択します。
+
+.. figure:: images/Picture7.jpg
+   :scale: 50%
+   :align: center
+
+
+
+
