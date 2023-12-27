@@ -5,7 +5,10 @@
 
 
 1. 検出スクリプト一覧
+
    [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から保護対象にて検出したスクリプトの一覧を表示可能です。各スクリプトをクリックすることで詳細確認が可能です。
+
+　Statusの状態の説明は下表のとおりです。
 
 
 .. csv-table::
@@ -24,6 +27,7 @@
 
 
 2. 意図する通信、意図しない通信のハンドリング
+
    `前項[4. XC Consoleでの確認]の4章,5章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
 
 
@@ -45,19 +49,20 @@
    :align: center
 
 
-   (3). Form Fieldを読み取るScriptに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [Block Read] へ追加することが可能です。
+   (3). Form Fieldを読み取るスクリプトに対するMitigation Actionとして、意図するForm Fieldの読み取りの場合は [Allow Read] へ、意図しないForm Fieldの読み取りの場合は [ Block Read ] へ追加することが可能です。
 
-      [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から [ Form Fields Read ] に数値が記録されているScriptを確認し、Form Fields Readの数字を選択します。
-
+      [ Home ] - [ Client-Side Defense ] - [ Monitoring ] - [ Script List ] から [ Form Fields Read ] に数値が記録されているスクリプトを確認し、 [ Form Fields Read ] の数字を選択します。
 
 .. figure:: images/Picture3-3.png
    :scale: 50%
    :align: center
 
 
-   (4). 該当Scriptが読み取っているForm Filedの一覧が表示され、それぞれのRisk Levelを確認可能です。前述の [Mark as Sensitive]にて該当Fieldを機微データとして登録しておくと、このFieldを読み取ろうとするScriptは ”High Risk” として記録されます。
-これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
+   (4). 該当Scriptが読み取っているForm Filedの一覧が表示され、それぞれのRisk Levelを確認可能です。
 
+   前述の [Mark as Sensitive]にて該当Fieldを機微データとして登録しておくと、このFieldを読み取ろうとするScriptは ”High Risk” として記録されます。
+
+   これらのScriptによる該当Fieldの読み取り可否を確認の上、Mitigation Actionとして [Allow Read] もしくは [Block Read] を設定可能です。
 
 .. figure:: images/Picture3-4.png
    :scale: 50%
