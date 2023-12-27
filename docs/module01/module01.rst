@@ -1,7 +1,7 @@
 XC Client-Side Defense(CSD)とは
 ======================================
 
-Client-Side Defense(以下、CSD)は、F5 Distributed Cloud Serviceの１つとして提供可能なWebスキミング対策用セキュリティSaaS型サービスです。
+Client-Side Defense(以下、CSD)は、F5 Distributed Cloud Service(以下、XC)の１つとして提供可能なWebスキミング対策用セキュリティSaaS型サービスです。
 
 クライアントのブラウザ上で動作するjavascriptの動作をリアルタイムに監視し、F5が開発したシグナルに基づいて異常があった場合に管理者にアラートを上げ、データ流出のリスクを軽減することが可能となります。
 
