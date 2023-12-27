@@ -39,14 +39,16 @@ XC Consoleでの設定
    :align: center
 
 
-5. 登録後、Configurationに反映されていることを確認します。
+5. 登録後、 [ Configuration ] に反映されていることを確認します。
 
 .. figure:: images/Picture5.png
    :scale: 50%
    :align: center
 
 
-6. [How to Inject JS]をクリックすると、CSD JSが表示されます。
+6. [ How to Inject JS ] をクリックすると、CSD JSが表示されます。
+
+   右の赤枠がスクリプトの内容となります。これを次項で挿入する設定を行います。
 
    .. figure:: images/Picture6.png
       :scale: 50%
