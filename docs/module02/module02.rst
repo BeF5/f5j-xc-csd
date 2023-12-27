@@ -34,7 +34,6 @@ XC Consoleでの設定
 
    - 参考）Root Domainは、eTDL(effective TLD)＋1の値でないと以下のようにエラーとなります。
 
-
    .. figure:: images/Picture4-2.png
       :scale: 50%
       :align: center
