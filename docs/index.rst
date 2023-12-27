@@ -1,4 +1,4 @@
-XC Client Side Defense(CSD) セットアップガイド
+XC Client-Side Defense(CSD) セットアップガイド
 ================================================
 
 はじめに
