@@ -29,7 +29,7 @@
 
 
 2. 意図する通信、意図しない通信のハンドリング
-    `前項[4. XC Consoleでの確認]の4章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
+   `前項[4. XC Consoleでの確認]の4章 <https://f5j-xc-csd.readthedocs.io/ja/latest/module04/module04.html>`_ をご参照ください。
 
 
 3. Form Fieldの読み取りを抑止
@@ -74,10 +74,91 @@
    (1). Alert Receiversの設定
       Home > Audit Logs & Alerts > Alerts Management > Alert Receivers にて、[Add Alert Receiver] を選択します。
 
-.. figure:: images/Picture7.jpg
-   :scale: 50%
-   :align: center
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
 
 
+      Receiver は下記から選択することが可能。(2023/12時点)
+      - Slack
+      - PagerDuty
+      - OpsGenie
+      - Email
+      - SMS
+      - Webhook
 
+      設定入力後、[Save and Exit] を押下。Alert Receiverの設定が追加される。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+   (2). Alert Policiesの設定
+      Home > Audit Logs & Alerts > Alerts Management > Alert Policiesにて、[Add Alert Policy] を選択。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+      Alert Policy設定では、先ほど設定したAlert Receiverの設定を紐づけ、Policy Rulesから[Security-CSD]を選択。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+      以下の通り、Security AlertsとGroupsを選択します。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      Show Advanced Fieldsを押下することで、通知間隔を調整可能です。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      設定入力後、[Save and Exit] を押下。Alert Policyの設定が追加される。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+   (3). Active Alertの設定
+      Home > Audit Logs & Alerts > Alerts Management > Active Alert Policiesにて、[Select Active Alert Policies] を選択。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      [Add Item] を押下 。
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      先ほど作成したAlert Policyを選択し、[Save and Exit] を押下
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      Active Alert Policyとして追加される（Namespaceは ”system” として作成される）
+
+      .. figure:: images/Picture7.jpg
+         :scale: 50%
+         :align: center
+
+
+      以上の設定により、CSDアラートが発生した際に、指定したReceiverに対してアラート通知を飛ばすことが可能。
+
+
+これで、XC CSDのセットアップガイドは終了となります。
 
