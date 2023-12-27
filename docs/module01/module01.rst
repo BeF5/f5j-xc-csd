@@ -9,11 +9,11 @@ CSDをご利用頂くことで、Webサイトにある「ユーザ名/パスワ�
 
 - 動作概要構成図
 
-.. figure:: images/Picture1.jpg
+.. figure:: images/Picture1.png
    :scale: 50%
    :align: center
 
 
-.. figure:: images/Picture2.jpg
+.. figure:: images/Picture2.png
    :scale: 50%
    :align: center
