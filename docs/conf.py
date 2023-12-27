@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'XC Servies Client Side Defense(CSD) セットアップガイド'
+project = 'XC CSD セットアップガイド'
 copyright = '2023, F5ネットワークスジャパン合同会社'
 author = 'F5ネットワークスジャパン合同会社'
 
