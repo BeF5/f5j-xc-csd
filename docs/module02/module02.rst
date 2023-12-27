@@ -32,11 +32,11 @@ XC Consoleでの設定
    :align: center
 
 
-   - 参考）Root Domainは、eTDL(effective TLD)＋1の値でないと以下のようにエラーとなります。
+- 参考）Root Domainは、eTDL(effective TLD)＋1の値でないと以下のようにエラーとなります。
 
-   .. figure:: images/Picture4-2.png
-      :scale: 50%
-      :align: center
+.. figure:: images/Picture4-2.png
+   :scale: 50%
+   :align: center
 
 
 5. 登録後、Configurationに反映されていることを確認します。
