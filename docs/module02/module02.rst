@@ -2,36 +2,38 @@ XC Consoleでの設定
 ======================================
 
 
-1. XC Consoleにアクセスし、以下、「Client-Side Defense」をクリックします。
+1. XC Consoleにアクセスし、以下の通り、 [ Home ] - [ Client-Side Defense ] をクリックします。
 
 .. figure:: images/Picture1.png
    :scale: 50%
    :align: center
 
 
-2. Dashboardが表示されます。
+2. [ Dashboard ] が表示されます。
 
 .. figure:: images/Picture2.png
    :scale: 50%
    :align: center
 
 
-3. 保護対象の設定
-   Home > Client-Side Defense > Manage – Configurationから、「Add domain to protect」をクリックします。
+3. 保護対象サイトの設定をします。
+
+   [ Home ] - [ Client-Side Defense] - [ Manage ] – [ Configuration ] から、 [ Add Domain To Protect ] をクリックします。
 
 .. figure:: images/Picture3.png
    :scale: 50%
    :align: center
 
 
-4. 対象サイトのRoot Domainを追加します。
+4. 対象サイトの [ Root Domain ] を追加し、 [ Save and Exit ] をクリックします。
 
 .. figure:: images/Picture4-1.png
    :scale: 50%
    :align: center
 
 
-   - 参考）Root DomainはeTDL(effective TLD)＋1の値でないとエラーになります。
+   - 参考）Root Domainは、eTDL(effective TLD)＋1の値でないと以下のようにエラーとなります。
+
 
 .. figure:: images/Picture4-2.png
    :scale: 50%
