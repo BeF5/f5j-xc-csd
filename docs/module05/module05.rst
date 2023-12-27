@@ -103,13 +103,13 @@
 
    (2). Alert Policiesの設定
 
-      [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Policies ] にて、[ Add Alert Policy ] を選択。
+      [ Home ] - [ Audit Logs & Alerts ] - [ Alerts Management ] - [ Alert Policies ] にて、[ Add Alert Policy ] を選択します。
 
       .. figure:: images/Picture4-4.png
          :scale: 50%
          :align: center
 
-      Alert Policy設定では、先ほど設定したAlert Receiverの設定を紐づけ、Policy Rulesから [ Security-CSD ] を選択。
+      Alert Policy設定では、先ほど設定したAlert Receiverの設定を紐づけ、Policy Rulesから [ Security-CSD ] を選択します。
  
       .. figure:: images/Picture4-5.png
          :scale: 50%
@@ -122,14 +122,14 @@
          :align: center
 
 
-      [ Show Advanced Fields ] を押下することで、通知間隔を調整可能です。
+      [ Show Advanced Fields ] をクリックすることで、通知間隔を調整可能です。
 
       .. figure:: images/Picture4-7.png
          :scale: 50%
          :align: center
 
 
-      設定入力後、[ Save and Exit ] をクリックする。 [ Alert Policy ] の設定が追加される。
+      設定入力後、[ Save and Exit ] をクリックすることで、[ Alert Policy ] の設定が追加されます。
 
       .. figure:: images/Picture4-8.png
          :scale: 50%
@@ -158,7 +158,7 @@
          :align: center
 
 
-      Active Alert Policyとして追加される（Namespaceは ”system” として作成される）
+      Active Alert Policyとして追加されます（Namespaceは ”system” として作成されます）
 
       .. figure:: images/Picture4-12.png
          :scale: 50%
