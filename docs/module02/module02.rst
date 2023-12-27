@@ -24,14 +24,14 @@ XC Consoleでの設定
    :align: center
 
 
-4. Root Domainを追加
+4. 対象サイトのRoot Domainを追加します。
 
 .. figure:: images/Picture4-1.png
    :scale: 50%
    :align: center
 
 
-   - 参考）Root DomainはeTDL(effective TLD)＋1の値でないとエラーになる。
+   - 参考）Root DomainはeTDL(effective TLD)＋1の値でないとエラーになります。
 
 .. figure:: images/Picture4-2.png
    :scale: 50%
@@ -45,7 +45,7 @@ XC Consoleでの設定
    :align: center
 
 
-6. [How to Inject JS]をクリックすると、CSD JSが表示される。
+6. [How to Inject JS]をクリックすると、CSD JSが表示されます。
 
    .. figure:: images/Picture6.png
       :scale: 50%
@@ -53,7 +53,7 @@ XC Consoleでの設定
 
    - CSD JSの挿入方法は以下２パターンあります。
 
-   (1). CSD保護が必要な対象HTTP LBの設定にて、CSD機能を有効化し、CSD JSをLBで挿入するように設定。（サーバ側での設定変更不要）
+   (1). CSD保護が必要な対象HTTP LBの設定にて、CSD機能を有効化し、CSD JSをLBで挿入するように設定します。（サーバ側での設定変更不要）
 
       .. figure:: images/Picture6-1.png
          :scale: 50%
@@ -75,5 +75,5 @@ XC Consoleでの設定
       :align: center
 
 
-   ※ なお、後述のGoogle Chromeを利用したテストではクライアント側ブラウザでCSD JSを挿入しているため [Test JS Injection] はエラーとなる。
+   ※ なお、後述のGoogle Chromeを利用したテストではクライアント側ブラウザでCSD JSを挿入しているため [Test JS Injection] はエラーとなります。
 
