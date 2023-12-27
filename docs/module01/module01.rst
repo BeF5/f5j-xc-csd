@@ -8,3 +8,9 @@ ccc。
 .. figure:: images/Picture1.jpg
    :scale: 50%
    :align: center
+
+
+
+.. figure:: images/Picture2.jpg
+   :scale: 50%
+   :align: center
