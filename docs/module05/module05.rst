@@ -87,12 +87,12 @@
 
 
       Receiverは下記から選択することが可能です。(2023/12時点)
-      ・Slack
-      ・PagerDuty
-      ・OpsGenie
-      ・Email
-      ・SMS
-      ・Webhook
+       ・Slack
+       ・PagerDuty
+       ・OpsGenie
+       ・Email
+       ・SMS
+       ・Webhook
 
       設定入力後、[ Save and Exit ] をクリックします。 [ Alert Receiver ] の設定が追加されます。
 
