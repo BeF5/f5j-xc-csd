@@ -9,7 +9,7 @@ Google Chromeを使った動作確認
    :align: center
 
 
-2. 右上から [ その他ツール ] - [ デベロッパー ツール ] をクリックします。
+2. 右上から [ その他のツール ] - [ デベロッパー ツール ] をクリックします。
 
 .. figure:: images/Picture2.png
    :scale: 50%
@@ -78,5 +78,5 @@ Google Chromeを使った動作確認
    :align: center
 
 
-次項でXC CSDで、検知できているかを確認します。
+次章でXC CSDで、検知できているかを確認します。
 

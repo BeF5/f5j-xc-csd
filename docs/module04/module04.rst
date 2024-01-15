@@ -16,16 +16,16 @@ XC Consoleでの確認
    :align: center
 
 
-3.  [ Domain] をクリックすると、 Risk Score などが詳細情報が確認可能です。
+3.  [ Domain ] をクリックすると、 Risk Score など詳細情報が確認可能です。
 
-   AI/MLによるRisk Score判定がHigh Riskに分類されると、 [ Status ] が [ Action Needed ] 表示となるため、意図するドメインへの通信の場合は [ Add To Allow List] へ、意図しないドメインへの通信の場合は [Add To Mitigate List] へ追加します。
+   AI/MLによるRisk Score判定がHigh Riskに分類されると、 [ Status ] が [ Action Needed ] 表示となるため、意図するドメインへの通信の場合は [ Add To Allow List ] へ、意図しないドメインへの通信の場合は [ Add To Mitigate List ] へ追加します。
 
 .. figure:: images/Picture3.png
    :scale: 50%
    :align: center
 
 
-4. 意図するドメインへの通信許可の設定
+■ 意図するドメインへの通信許可の設定
 
    (1). 対象DomainをAllow Listに追加します。
 
@@ -36,7 +36,7 @@ XC Consoleでの確認
       :align: center
 
 
-   (2). 警告を確認し、 [ Add] を クリックでAllow Listへの登録は完了です。
+   (2). 警告を確認し、 [ Add ] を クリックでAllow Listへの登録は完了です。
 
    .. figure:: images/Picture4-2.png
       :scale: 50%
@@ -50,7 +50,7 @@ XC Consoleでの確認
       :align: center
 
 
-5. 意図しないドメインへの通信遮断の設定
+■ 意図しないドメインへの通信遮断の設定
 
    (1). 対象DomainをMitigate Listに追加します。
 
