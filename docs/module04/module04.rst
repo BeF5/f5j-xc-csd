@@ -25,7 +25,7 @@ XC Consoleでの確認
    :align: center
 
 
-■ 意図するドメインへの通信許可の設定
+4. 意図するドメインへの通信許可の設定
 
    (1). 対象DomainをAllow Listに追加します。
 
@@ -50,7 +50,7 @@ XC Consoleでの確認
       :align: center
 
 
-■ 意図しないドメインへの通信遮断の設定
+5. 意図しないドメインへの通信遮断の設定
 
    (1). 対象DomainをMitigate Listに追加します。
 
